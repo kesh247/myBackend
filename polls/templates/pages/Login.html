@@ -1,0 +1,44 @@
+{% extends "pages/layout.html" %}
+{% block body%}
+<div class="container p-4">
+   <form class="form">
+      <div class="p-4">
+         <h4 class="display-4 text-center">Welcome Back!</h4>
+      </div>
+      <div class="py-4 form-group">
+         <label for="email" class="form-label col-form-auto">
+            <strong class="text-centertext-secondary ">Email address</strong>
+         </label>
+         <div class="col-form-auto">
+            <input type="text" class="shadow-none border border-success
+               border-top-0 border-left-0
+               border-right-0
+               form-control" placeholder="examplename@hotmail.com" name="username" id="username" />
+         </div>
+      <div class="py-4 form-group ">
+         <label for="username" class="form-label col-form-auto">
+            <strong class="text-centertext-secondary ">Password</strong>
+         </label>
+         <div class="col-form-auto">
+            <div class=" input-group">
+            <input type="Password" class="shadow-none border border-success
+               border-top-0 border-left-0
+               border-right-0
+               form-control" placeholder="Enter Password" name="password" id="password" />
+           <div class=" input-group-append">
+              <i class="icon input-group-text 
+                 border-top-0
+                 border-left-0
+                 border-right-0
+               bg-white border border-success fa fa-eye "></i>
+               
+           </div>
+           </div>
+           
+         </div>
+            <div class="pt-2 text-small text-right">Forget Password ?</div>                 
+      <button class="mt-4 rounded-0 btn-block btn btn-lg btn-success" type="submit">Login</button>
+      
+   </form>
+</div>
+{% endblock %}
